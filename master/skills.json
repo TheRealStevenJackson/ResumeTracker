@@ -1,0 +1,39 @@
+{
+  "graphicsAndRendering": [
+    "Vulkan",
+    "OpenGL",
+    "Variable Rate Shading",
+    "Dynamic Rendering",
+    "Framebufferless Pipelines",
+    "Bindless Textures",
+    "Ray Tracing",
+    "GPU Driven Rendering",
+    "PBR",
+    "GLSL",
+    "HLSL"
+  ],
+  "engines": [
+    "Unity",
+    "Unreal Engine",
+    "Godot"
+  ],
+  "aiAssistedDevelopment": [
+    "Code generation",
+    "Rapid prototyping",
+    "Debugging",
+    "Architectural review"
+  ],
+  "languages": [
+    "C++",
+    "GDScript",
+    "Kotlin",
+    "Java",
+    "Python",
+    "C#"
+  ],
+  "tools": [
+    "RenderDoc",
+    "Snapdragon Profiler",
+    "Nsight"
+  ]
+}

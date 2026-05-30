@@ -1,0 +1,16 @@
+{
+  "id": "proj-project-name",
+  "name": "",
+  "description": "",
+  "url": "",
+  "start": "YYYY-MM",
+  "end": "present",
+  "status": "active",
+  "bullets": [
+    {
+      "id": "bullet-proj-topic",
+      "text": "",
+      "tags": []
+    }
+  ]
+}

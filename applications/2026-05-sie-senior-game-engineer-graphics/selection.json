@@ -1,0 +1,43 @@
+{
+  "applicationId": "2026-05-sie-senior-game-engineer-graphics",
+  "jobTitle": "Senior Game Engineer - Graphics",
+  "company": "Sony Interactive Entertainment (PlayStation)",
+  "experienceOrder": [
+    "exp-innopeak-software-engineer"
+  ],
+  "projectOrder": [
+    "proj-vulkan-game-engine",
+    "proj-tile-game-godot-jam"
+  ],
+  "selectedBullets": [
+    "bullet-innopeak-vrs-patents",
+    "bullet-innopeak-opengl-interception",
+    "bullet-innopeak-layer-caching",
+    "bullet-innopeak-gpu-vendor-collab",
+    "bullet-innopeak-gpu-presentations",
+    "bullet-engine-vulkan-architecture",
+    "bullet-engine-pbr-shaders",
+    "bullet-engine-lighting-system",
+    "bullet-tilegame-fog-of-war",
+    "bullet-tilegame-camera",
+    "bullet-tilegame-editor-tooling",
+    "bullet-tilegame-pc-ship"
+  ],
+  "customSummary": "Graphics and rendering engineer with 6+ years designing and shipping GPU-focused performance optimizations and system-level rendering solutions. Patented Variable Rate Shading implementations adopted across millions of devices, with deep expertise in modern graphics pipelines spanning Vulkan, OpenGL, Unity, and ray tracing. Building a custom C++ game engine with PBR shaders, a multi-light rendering pipeline, and layered architecture; shipped a 3D Godot 4.6 game jam title on Windows PC with expressive camera and fog-of-war visual systems. Experienced driving technical initiatives from concept to production, collaborating with cross-functional partners, and balancing visual quality against strict CPU, GPU, and memory constraints.",
+  "selectedSkills": [
+    "C++",
+    "Vulkan",
+    "OpenGL",
+    "Godot",
+    "Unity",
+    "GDScript",
+    "GLSL",
+    "HLSL",
+    "PBR",
+    "Variable Rate Shading",
+    "Ray Tracing",
+    "GPU Driven Rendering",
+    "RenderDoc",
+    "Nsight"
+  ]
+}

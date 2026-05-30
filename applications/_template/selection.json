@@ -1,0 +1,17 @@
+{
+  "applicationId": "YYYY-MM-company-role",
+  "jobTitle": "",
+  "company": "",
+  "experienceOrder": [
+    "exp-company-role"
+  ],
+  "projectOrder": [
+    "proj-project-name"
+  ],
+  "selectedBullets": [
+    "bullet-company-topic",
+    "bullet-proj-topic"
+  ],
+  "customSummary": "",
+  "selectedSkills": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": "exp-innopeak-software-engineer",
+  "company": "InnoPeak Technology Inc",
+  "title": "Software Engineer",
+  "location": "Bellevue, WA",
+  "start": "2020-01",
+  "end": "present",
+  "bullets": [
+    {
+      "id": "bullet-innopeak-ai-development",
+      "text": "Leveraged AI-assisted development tooling to automate boilerplate generation and accelerate rapid prototyping while maintaining architectural oversight through structured code review, using AI as a force multiplier to significantly increase engineering throughput.",
+      "tags": ["ai", "productivity", "code-review", "prototyping"]
+    },
+    {
+      "id": "bullet-innopeak-layer-caching",
+      "text": "Designed and led a team of engineers to implement an AOSP system-wide layer caching feature reducing power consumption by 12% during high-frequency interaction scenarios, ultimately improving battery life on production devices.",
+      "tags": ["aosp", "android", "leadership", "power-optimization", "layer-caching", "patent"]
+    },
+    {
+      "id": "bullet-innopeak-vrs-patents",
+      "text": "Designed and patented custom Variable Rate Shading implementations across OpenGL and Vulkan, achieving approximately 10% average rendering performance improvements on flagship devices and approximately 7% improvements in Unity engine integrations and ray tracing pipelines, while maintaining high visual fidelity.",
+      "tags": ["vulkan", "opengl", "vrs", "variable-rate-shading", "unity", "ray-tracing", "patent", "performance"]
+    },
+    {
+      "id": "bullet-innopeak-opengl-interception",
+      "text": "Architected the foundation for an OpenGL game interception platform by reverse engineering pipelines to identify systemic optimization opportunities, remaining a central internal standard five years post release.",
+      "tags": ["opengl", "architecture", "reverse-engineering", "optimization"]
+    },
+    {
+      "id": "bullet-innopeak-gpu-vendor-collab",
+      "text": "Collaborated directly with Android OS teams and GPU vendors including Qualcomm and MediaTek to deploy graphics optimizations at scale, ensuring consistent performance and power improvements across millions of consumer devices.",
+      "tags": ["android", "qualcomm", "mediatek", "gpu", "cross-functional", "scale"]
+    },
+    {
+      "id": "bullet-innopeak-gpu-presentations",
+      "text": "Delivered internal technical presentations on emerging GPU features and forward-looking rendering techniques, influencing product direction and guiding adoption of advanced graphics capabilities across teams.",
+      "tags": ["presentations", "gpu", "technical-leadership", "rendering"]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "exp-company-role",
+  "company": "",
+  "title": "",
+  "location": "",
+  "start": "YYYY-MM",
+  "end": "present",
+  "bullets": [
+    {
+      "id": "bullet-company-topic",
+      "text": "",
+      "tags": []
+    }
+  ]
+}

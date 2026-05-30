@@ -1,0 +1,36 @@
+{
+  "id": "proj-tile-game-godot-jam",
+  "name": "TileGame (Godot Game Jam)",
+  "description": "3D turn-based tile exploration game built in Godot 4.6 with Forward Plus rendering, shipped as a Windows PC build.",
+  "url": "https://github.com/TheRealStevenJackson/TileGame",
+  "start": "2026-02",
+  "end": "2026-02",
+  "status": "completed",
+  "bullets": [
+    {
+      "id": "bullet-tilegame-pc-ship",
+      "text": "Shipped a playable Windows PC build of a 3D turn-based tile game during a game jam using Godot 4.6 with Forward Plus rendering and Jolt Physics.",
+      "tags": ["godot", "game-jam", "pc", "3d", "shipping"]
+    },
+    {
+      "id": "bullet-tilegame-camera",
+      "text": "Implemented a 3D orbit camera with mouse-wheel zoom and keyboard rotation around a character pivot, enabling expressive camera control for tile-based exploration.",
+      "tags": ["godot", "camera", "3d", "gameplay"]
+    },
+    {
+      "id": "bullet-tilegame-fog-of-war",
+      "text": "Built a fog-of-war visual system using billboard Sprite3D nodes with tweened fade-in and fade-out transitions, revealing map tiles as the player explored.",
+      "tags": ["godot", "vfx", "visual-systems", "3d", "stylized"]
+    },
+    {
+      "id": "bullet-tilegame-editor-tooling",
+      "text": "Authored an editor-integrated (@tool) script that procedurally generated unique placeholder card art for 100+ card resources and assigned textures directly to card data assets.",
+      "tags": ["godot", "tooling", "editor", "artist-facing", "workflow"]
+    },
+    {
+      "id": "bullet-tilegame-gameplay-systems",
+      "text": "Developed turn-based gameplay systems including a tile registry, character movement with tweened animation, enemy spawning, and fog-of-war visibility management.",
+      "tags": ["godot", "gameplay", "systems", "game-jam"]
+    }
+  ]
+}

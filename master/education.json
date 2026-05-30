@@ -1,0 +1,15 @@
+{
+  "degrees": [
+    {
+      "id": "edu-wsu-vancouver-bs-cs",
+      "institution": "Washington State University Vancouver",
+      "degree": "Bachelor of Science in Computer Science",
+      "graduated": "2019-07",
+      "honors": [
+        "Graduated Cum Laude",
+        "President's Honor Roll"
+      ]
+    }
+  ],
+  "certifications": []
+}
