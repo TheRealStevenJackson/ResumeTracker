@@ -5,36 +5,182 @@
   "location": "Bellevue, WA",
   "start": "2020-01",
   "end": "present",
+  "projects": [
+    {
+      "id": "proj-innopeak-android-x86-gaming",
+      "name": "Android x86-64 PC Game Compatibility",
+      "start": "2026-02",
+      "end": "present",
+      "notes": "Solo owner. Qualcomm vs InnoPeak benchmark pending — update when ready. Steam launcher is a possible future product detail; omit from public resume until disclosure is clear.",
+      "bullets": [
+        {
+          "id": "bullet-innopeak-x86-stack-architecture",
+          "text": "Sole owner of end-to-end delivery — architecture, documentation, implementation, and performance validation — for a custom x86-64 Windows game compatibility stack on Android, using chroot-based Ubuntu (glibc), ARM64EC Wine, FEX-EMU, and DXVK to translate DirectX workloads to Vulkan on mobile GPUs.",
+          "tags": ["android", "x86", "wine", "arm64ec", "fex-emu", "dxvk", "vulkan", "directx", "architecture", "chroot", "leadership", "solo"]
+        },
+        {
+          "id": "bullet-innopeak-x86-winlator-benchmark",
+          "text": "Benchmarked against Winlator on Snapdragon 8 Elite hardware, achieving 5–10% improvements in frame rate and power draw with stable, consistent frame pacing versus erratic spikes observed in third-party solutions.",
+          "tags": ["android", "benchmarking", "performance", "power", "gaming", "snapdragon-8-elite", "winlator"]
+        },
+        {
+          "id": "bullet-innopeak-x86-aaa-titles",
+          "text": "Validated AAA PC title compatibility on Android, including The Witcher 3, with ongoing expansion toward broader Steam library support through systematic compatibility and performance testing.",
+          "tags": ["android", "gaming", "steam", "wine", "vulkan", "compatibility"]
+        },
+        {
+          "id": "bullet-innopeak-x86-product-qualcomm",
+          "text": "Driving a consumer-facing application vision that removes manual Winlator-style setup for x86 PC gaming on Android; leveraging platform-level integration (chroot, root access) as a device software engineer while benchmarking against Qualcomm vendor reference solutions.",
+          "tags": ["android", "product", "qualcomm", "benchmarking", "chroot", "gaming"]
+        }
+      ]
+    },
+    {
+      "id": "proj-innopeak-unified-rendering",
+      "name": "Unified Rendering",
+      "start": "2025-11",
+      "end": "2026-01",
+      "notes": "Contributor (not sole owner); supported unified rendering when capacity allowed, Nov 2025–Jan 2026. Feature shipped on a subset of production devices; rollout scaling as bug fixes land. Team now in maintenance/bug-fix phase. Various bug fixes across the initiative.",
+      "bullets": [
+        {
+          "id": "bullet-innopeak-unified-rendering-architecture",
+          "text": "Contributed to an AOSP unified rendering initiative that moved user and system UI (including launcher) from per-application buffer-queue compositing to display-list submission to SurfaceFlinger, consolidating GPU work into a single renderer context to reduce driver context switching and improve compositing efficiency; feature now shipping on production devices.",
+          "tags": ["android", "aosp", "surfaceflinger", "rendering", "gpu", "display-list", "compositing", "shipping"]
+        },
+        {
+          "id": "bullet-innopeak-unified-rendering-resource-allocation",
+          "text": "Owned centralized GPU resource allocation for textures, buffers, shaders, vertex data, and typefaces: implemented Binder and shared-memory IPC so allocation requests initiated on the app side were fulfilled in the centralized renderer, with serialized resource payloads and custom client-side handles—analogous to Java handle indirection—so draw calls reference stable handles while actual GPU data resides in the shared renderer process.",
+          "tags": ["android", "aosp", "ipc", "binder", "shared-memory", "serialization", "gpu", "rendering", "handles", "textures", "typefaces"]
+        },
+        {
+          "id": "bullet-innopeak-unified-rendering-performance",
+          "text": "Reduced frame hitching from ~30% to under 1% by diagnosing and resolving race conditions between client applications and the centralized renderer during resource synchronization.",
+          "tags": ["android", "aosp", "performance", "rendering", "race-conditions", "frame-hitching"]
+        }
+      ]
+    },
+    {
+      "id": "proj-innopeak-layer-caching",
+      "name": "Layer Caching",
+      "start": "2024-07",
+      "end": "2025-10",
+      "notes": "Primary technical driver; started solo, onboarded two engineers via shared template. No overlap with Unified Rendering (started Nov 2025 when this ended). Shipped on all company production devices. Patent may list user as inventor but was authored elsewhere — confirm before citing on resumes.",
+      "bullets": [
+        {
+          "id": "bullet-innopeak-layer-caching",
+          "text": "Primary technical driver of an AOSP layer caching initiative—owned end-to-end planning, architecture, and core implementation, then onboarded two engineers through a reusable optimization template to extend caching across additional UI effects; shipped on all company production devices with 12% power reduction during high-frequency interaction scenarios.",
+          "tags": ["aosp", "android", "surfaceflinger", "leadership", "power-optimization", "layer-caching", "shipping"]
+        },
+        {
+          "id": "bullet-innopeak-layer-caching-template",
+          "text": "Designed a reusable layer-caching template in SurfaceFlinger that introduces dedicated compositor layers for expensive render effects—such as drop shadows previously drawn directly into parent buffers—enabling independent cache lifetimes and allowing additional engineers to apply the pattern to blur, rounded corners, and overlay chrome without re-architecting the pipeline.",
+          "tags": ["aosp", "android", "surfaceflinger", "rendering", "architecture", "layer-caching", "compositing"]
+        },
+        {
+          "id": "bullet-innopeak-layer-caching-composition",
+          "text": "Implemented cache invalidation and dirty-region updates in RenderEngine and the composition pipeline so static background content leaves blur, shadows, and rounded corners cached while in-overlay updates repaint only affected regions—avoiding per-frame software composition and restoring hardware-composer eligibility for cached layers.",
+          "tags": ["aosp", "android", "renderengine", "compositing", "gpu", "power-optimization", "layer-caching", "hwcomposer"]
+        },
+        {
+          "id": "bullet-innopeak-layer-caching-hwc",
+          "text": "Partnered with Qualcomm using hardware-composer vendor logs to diagnose composition fallbacks, building practical knowledge of per-SoC layer budgets and scaling-core limits on Qualcomm and MediaTek platforms to keep cached layers within HWC compose paths.",
+          "tags": ["android", "qualcomm", "mediatek", "hwcomposer", "compositing", "layer-caching", "cross-functional"]
+        }
+      ]
+    },
+    {
+      "id": "proj-innopeak-vrs",
+      "name": "Variable Rate Shading",
+      "start": "2022-07",
+      "end": "2024-06",
+      "notes": "Solo owner end-to-end; preceded Layer Caching (Jul 2024). Deep R&D into reduced fragment shading—API VRS (OpenGL/Vulkan), checkerboard, foveated rendering, custom stencil-buffer VRS, and image reconstruction/infill for undersampled regions. Only API-backed VRS shipped on all company production devices; checkerboard and foveated not deployed due to quality/vendor concerns. Custom stencil approach explored but lacked meaningful performance gains—not pursued. Follow-on to OpenGL interception (ended Jun 2022): replaced texture-based per-texture shading rates with frame-based API VRS (mode 2). Inventor on three VRS-related patents; patent numbers TBD. Delivered ~90-min internal presentation to ~30 engineers; authored extensive internal documentation.",
+      "bullets": [
+        {
+          "id": "bullet-innopeak-vrs-patents",
+          "text": "Sole owner of a deep R&D initiative into reduced fragment shading—evaluating API-backed Variable Rate Shading in OpenGL and Vulkan, checkerboard and foveated rendering, custom stencil-based alternatives, and image reconstruction to infill undersampled regions—inventor on three related patents; shipped VRS on all company production devices with approximately 10% average rendering performance gains on flagship hardware while maintaining high visual fidelity; delivered internal technical presentations on VRS and emerging GPU rendering techniques, influencing product direction across engineering teams.",
+          "tags": ["vulkan", "opengl", "vrs", "variable-rate-shading", "patent", "performance", "rendering", "leadership", "solo", "shipping", "presentations", "technical-leadership"]
+        },
+        {
+          "id": "bullet-innopeak-vrs-ray-tracing",
+          "text": "Integrated Variable Rate Shading into an internal ray tracing pipeline, raising frame rates from roughly 25 to 60–65 FPS in demanding scenes and from roughly 40 to 95 FPS in lighter workloads, improving frame time and GPU time.",
+          "tags": ["vrs", "variable-rate-shading", "ray-tracing", "performance", "rendering", "gpu"]
+        },
+        {
+          "id": "bullet-innopeak-vrs-unity",
+          "text": "Built a Unity Variable Rate Shading plugin through Vulkan API interception—modifying instance and device creation and pre-generating shading-rate attachment objects before context initialization—achieving approximately 7% rendering performance improvement in Unity workloads; company's first Vulkan interception work.",
+          "tags": ["unity", "vulkan", "vrs", "variable-rate-shading", "interception", "performance", "rendering"]
+        },
+        {
+          "id": "bullet-innopeak-vrs-interception",
+          "text": "Replaced texture-based per-texture shading in the OpenGL ES game interception layer with frame-based API Variable Rate Shading for third-party titles on company devices, contributing approximately 7–10% rendering performance improvement based on documented production benchmarks.",
+          "tags": ["opengl", "opengl-es", "vrs", "variable-rate-shading", "interception", "gaming", "performance", "optimization", "android"]
+        },
+        {
+          "id": "bullet-innopeak-vrs-qualcomm",
+          "text": "Collaborated with Android OS teams and GPU vendors including Qualcomm and MediaTek to deploy graphics optimizations at scale across millions of consumer devices; presented VRS research findings and mobile performance bottlenecks at Qualcomm headquarters in San Diego, advocating for desktop-class Vulkan extensions—including sample point relocation for MSAA—to unblock custom variable-rate shading algorithms on mobile GPUs.",
+          "tags": ["qualcomm", "mediatek", "android", "gpu", "vulkan", "vrs", "variable-rate-shading", "cross-functional", "msaa", "presentations", "scale"]
+        }
+      ]
+    },
+    {
+      "id": "proj-innopeak-opengl-interception",
+      "name": "OpenGL Game Interception",
+      "start": "2020-08",
+      "end": "2022-06",
+      "notes": "Graphics engineer on ~5-person team (3 graphics, 1–2 system). System engineers owned interception layer and package-to-module routing; graphics owned per-game modules. User owned PUBG and Honor of Kings; also helped shape which OpenGL functions and per-call data the team analyzed. ~7–9 flagship titles (LoL, PUBG, Honor of Kings, story games, Chinese-market racing title — name TBD, possibly QQ Speed). Texture-based API shading rates here; frame-based VRS succeeded this in proj-innopeak-vrs (Jul 2022+). Related patents on interception structure and game-mode detection via API analysis may exist — user not listed as inventor; confirm titles/numbers before citing.",
+      "bullets": [
+        {
+          "id": "bullet-innopeak-interception-platform",
+          "text": "Contributed to an OpenGL ES game interception layer on Android mobile GPUs that profiles flagship third-party titles—including PUBG, Honor of Kings, and League of Legends—for per-game GPU optimization; helped define per-call analysis APIs and the graphics data used to infer frame structure and game mode (menu, gameplay, and other states), including texture-based shading-rate automation; platform remains a central org-wide optimization standard five years after release.",
+          "tags": ["opengl", "opengl-es", "android", "interception", "gaming", "optimization", "reverse-engineering", "pubg", "honor-of-kings", "league-of-legends", "vrs", "variable-rate-shading"]
+        },
+        {
+          "id": "bullet-innopeak-interception-games",
+          "text": "Owned per-title optimization modules for PUBG and Honor of Kings on a shared interception platform also covering League of Legends and other top third-party games, reverse-engineering OpenGL call sequences and frame patterns to enable state-specific GPU optimizations.",
+          "tags": ["opengl", "opengl-es", "android", "gaming", "pubg", "honor-of-kings", "league-of-legends", "interception", "optimization"]
+        },
+        {
+          "id": "bullet-innopeak-interception-texture-vrs",
+          "text": "Built an offline texture processor and runtime texture-hash lookup table that assigned per-texture API shading rates (1×1 through 4×4) using edge-frequency analysis on dumped texture data, with runtime binding to select shading rates—achieving approximately 5% power reduction through conservative GPU workload cuts while preserving quality on high-detail assets.",
+          "tags": ["opengl", "opengl-es", "vrs", "variable-rate-shading", "textures", "power-optimization", "performance", "android", "gaming"]
+        },
+        {
+          "id": "bullet-innopeak-interception-collaboration",
+          "text": "Partnered with system engineers who architected package detection and dispatch into per-game implementation modules, while the graphics team divided flagship titles and delivered individualized optimization logic within the shared interception framework.",
+          "tags": ["opengl", "android", "interception", "gaming", "cross-functional", "architecture"]
+        }
+      ]
+    },
+    {
+      "id": "proj-innopeak-android-testbed",
+      "name": "Native Android Testbed Applications",
+      "start": "2020-01",
+      "end": "2020-07",
+      "notes": "First project after hire; preceded OpenGL Game Interception (Aug 2020). Contributor across multiple org teams—not sole owner of any single testbed. Prior ~1 year of native Android and Java app development before joining InnoPeak. Camera work used Camera2 API for multi-camera HDR testing; team cared about preserving capture fidelity but user does not recall specific techniques—keep resume bullets factual, not speculative.",
+      "bullets": [
+        {
+          "id": "bullet-innopeak-testbed-apps",
+          "text": "Built and maintained native Android testbed applications in Java for multiple teams across the org, optimizing runtime performance so testbeds ran smoothly and could execute larger test suites within the same hardware constraints.",
+          "tags": ["android", "java", "testbed", "performance", "cross-functional"]
+        },
+        {
+          "id": "bullet-innopeak-multi-camera-hdr",
+          "text": "Built camera testbed features using the Android Camera2 API to exercise multi-camera sensors on company devices, including HDR capture and processing workflows; gained practical exposure to display and sensor color science.",
+          "tags": ["android", "java", "camera2", "camera", "multi-camera", "hdr", "color-science", "sensors"]
+        },
+        {
+          "id": "bullet-innopeak-sensor-integration",
+          "text": "Configured testbed applications for sensor detection and data processing—wiring apps to read from device sensors and handle incoming sensor data for validation workflows.",
+          "tags": ["android", "java", "sensors", "testbed"]
+        }
+      ]
+    }
+  ],
   "bullets": [
     {
       "id": "bullet-innopeak-ai-development",
       "text": "Leveraged AI-assisted development tooling to automate boilerplate generation and accelerate rapid prototyping while maintaining architectural oversight through structured code review, using AI as a force multiplier to significantly increase engineering throughput.",
       "tags": ["ai", "productivity", "code-review", "prototyping"]
-    },
-    {
-      "id": "bullet-innopeak-layer-caching",
-      "text": "Designed and led a team of engineers to implement an AOSP system-wide layer caching feature reducing power consumption by 12% during high-frequency interaction scenarios, ultimately improving battery life on production devices.",
-      "tags": ["aosp", "android", "leadership", "power-optimization", "layer-caching", "patent"]
-    },
-    {
-      "id": "bullet-innopeak-vrs-patents",
-      "text": "Designed and patented custom Variable Rate Shading implementations across OpenGL and Vulkan, achieving approximately 10% average rendering performance improvements on flagship devices and approximately 7% improvements in Unity engine integrations and ray tracing pipelines, while maintaining high visual fidelity.",
-      "tags": ["vulkan", "opengl", "vrs", "variable-rate-shading", "unity", "ray-tracing", "patent", "performance"]
-    },
-    {
-      "id": "bullet-innopeak-opengl-interception",
-      "text": "Architected the foundation for an OpenGL game interception platform by reverse engineering pipelines to identify systemic optimization opportunities, remaining a central internal standard five years post release.",
-      "tags": ["opengl", "architecture", "reverse-engineering", "optimization"]
-    },
-    {
-      "id": "bullet-innopeak-gpu-vendor-collab",
-      "text": "Collaborated directly with Android OS teams and GPU vendors including Qualcomm and MediaTek to deploy graphics optimizations at scale, ensuring consistent performance and power improvements across millions of consumer devices.",
-      "tags": ["android", "qualcomm", "mediatek", "gpu", "cross-functional", "scale"]
-    },
-    {
-      "id": "bullet-innopeak-gpu-presentations",
-      "text": "Delivered internal technical presentations on emerging GPU features and forward-looking rendering techniques, influencing product direction and guiding adoption of advanced graphics capabilities across teams.",
-      "tags": ["presentations", "gpu", "technical-leadership", "rendering"]
     }
   ]
 }

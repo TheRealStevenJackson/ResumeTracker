@@ -5,9 +5,24 @@
   "location": "",
   "start": "YYYY-MM",
   "end": "present",
+  "projects": [
+    {
+      "id": "proj-company-initiative",
+      "name": "",
+      "start": "YYYY-MM",
+      "end": "present",
+      "bullets": [
+        {
+          "id": "bullet-company-topic",
+          "text": "",
+          "tags": []
+        }
+      ]
+    }
+  ],
   "bullets": [
     {
-      "id": "bullet-company-topic",
+      "id": "bullet-company-cross-cutting",
       "text": "",
       "tags": []
     }

@@ -11,10 +11,9 @@
   ],
   "selectedBullets": [
     "bullet-innopeak-vrs-patents",
-    "bullet-innopeak-opengl-interception",
+    "bullet-innopeak-vrs-qualcomm",
+    "bullet-innopeak-interception-platform",
     "bullet-innopeak-layer-caching",
-    "bullet-innopeak-gpu-vendor-collab",
-    "bullet-innopeak-gpu-presentations",
     "bullet-engine-vulkan-architecture",
     "bullet-engine-pbr-shaders",
     "bullet-engine-lighting-system",

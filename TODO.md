@@ -4,8 +4,8 @@ Periodic checklist. Update items as you complete them.
 
 ## Your action items
 
-- [ ] **Patent details** — Find patent numbers/titles for VRS, layer caching, and related work. Decide later whether to cite on resumes or keep as searchable metadata only.
-- [ ] **Additional side projects** — Add new files under `master/projects/` when ready.
+- [ ] **Patent details** — Find patent numbers/titles for VRS (3 patents, inventor listed), layer caching, OpenGL interception (interception architecture + game-mode detection via API analysis — user not listed as inventor), and related work. Decide later whether to cite on resumes or keep as searchable metadata only.
+- [ ] **InnoPeak project breakdown** — OpenGL interception added (`proj-innopeak-opengl-interception`, Aug 2020–Jun 2022). Remaining initiatives TBD via `@New Job Project.md`.
 - [ ] **Portfolio website** — Optional: host project videos/screenshots; add URL to `master/profile.json` → `links.portfolio` when live.
 - [ ] **Prior work experience** — Optional: add pre-InnoPeak roles if you decide they belong on future resumes.
 - [ ] **Practice job application** — Start a new thread with `@New Job Listing.md`, paste a job listing, and run through the workflow.

@@ -17,7 +17,9 @@ When generating a tailored resume, master data maps to these section headings:
 | `master/experience/*.json` | **Professional Experience** |
 | `master/projects/*.json` | **Technical Projects** |
 
-Jobs and project work are never mixed in the same section.
+Jobs and personal project work are never mixed in the same section.
+
+**Employer projects vs personal projects:** Initiatives at a company (e.g. VRS at InnoPeak) live in `master/experience/*.json` under a `projects[]` array — for management and tailoring only; generated resumes still show flat bullets under the job. Personal repos and side work live in `master/projects/` and appear under **Technical Projects**.
 
 ## Directory layout
 
@@ -49,6 +51,15 @@ templates/
 1. Copy `master/experience/_template.json` to `master/experience/<company-slug>-<role-slug>.json`.
 2. Fill in company, title, dates, and accomplishment bullets.
 3. Add `tags` to each bullet — these help match job listings later.
+
+## Adding a professional project (employer work)
+
+Internal initiatives at a job (e.g. a major feature at InnoPeak) are **not** the same as personal projects in `master/projects/`.
+
+1. Open a thread and reference [`New Job Project.md`](New%20Job%20Project.md) — describe the project using the template.
+2. Bullets are stored under `projects[]` in the relevant `master/experience/*.json` file.
+3. Cross-cutting bullets (AI workflow, broad leadership) go in the role-level `bullets[]` array.
+4. Generated resumes still list flat bullets under **Professional Experience** — internal project names are not shown.
 
 ## Adding a personal project
 
