@@ -21,6 +21,14 @@ Jobs and personal project work are never mixed in the same section.
 
 **Employer projects vs personal projects:** Initiatives at a company (e.g. VRS at InnoPeak) live in `master/experience/*.json` under a `projects[]` array — for management and tailoring only; generated resumes still show flat bullets under the job. Personal repos and side work live in `master/projects/` and appear under **Technical Projects**.
 
+## Workflow guides
+
+| File | Use when |
+|------|----------|
+| [`Resume Bullets.md`](Resume%20Bullets.md) | Writing or revising any master accomplishment bullet |
+| [`New Job Project.md`](New%20Job%20Project.md) | Adding employer initiatives to `master/experience/` |
+| [`New Job Listing.md`](New%20Job%20Listing.md) | Starting a tailored application under `applications/` |
+
 ## Directory layout
 
 ```
@@ -49,7 +57,7 @@ templates/
 ## Adding a new job to your master resume
 
 1. Copy `master/experience/_template.json` to `master/experience/<company-slug>-<role-slug>.json`.
-2. Fill in company, title, dates, and accomplishment bullets.
+2. Fill in company, title, dates, and accomplishment bullets — see [`Resume Bullets.md`](Resume%20Bullets.md).
 3. Add `tags` to each bullet — these help match job listings later.
 
 ## Adding a professional project (employer work)
@@ -66,7 +74,7 @@ Internal initiatives at a job (e.g. a major feature at InnoPeak) are **not** the
 Keep projects separate from jobs — they have different metadata (repo link, ongoing status) and you often include them selectively per application.
 
 1. Copy `master/projects/_template.json` to `master/projects/<project-slug>.json`.
-2. Fill in name, short description, URL, dates, and accomplishment bullets.
+2. Fill in name, short description, URL, dates, and accomplishment bullets — see [`Resume Bullets.md`](Resume%20Bullets.md).
 3. Use `status`: `active`, `completed`, or `paused`.
 
 ## Starting a new application

@@ -1,0 +1,11 @@
+---
+description: Style and structure for new master resume accomplishment bullets
+globs: master/experience/**/*.json,master/projects/**/*.json
+alwaysApply: false
+---
+
+# Master resume bullets
+
+When adding or editing bullet `text` in `master/experience/` or `master/projects/`, read and follow **[`Resume Bullets.md`](../../Resume%20Bullets.md)** (Google X–Y–Z, 20–40 words, one accomplishment per bullet).
+
+Also apply that guide when [`New Job Project.md`](../../New%20Job%20Project.md) or [`New Job Listing.md`](../../New%20Job%20Listing.md) workflows create or suggest new master bullets.

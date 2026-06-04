@@ -14,7 +14,7 @@ Follow the Resume Tracker workflow in this repo:
 2. Copy `applications/_template/` to `applications/[YYYY-MM]-[company-slug]-[role-slug]/`.
 3. Save the job description to `job-description.md`.
 4. Run gap analysis in `analysis.md` — match requirements against master resume items; note gaps to add later.
-5. **GitHub project scan** — for any skill gaps (❌ or ⚠️), fetch public repos from `master/profile.json` → `links.github` via the GitHub API. Review READMEs and repo structure for evidence of those skills. Document findings in the **GitHub project evidence** section of `analysis.md`. Suggest new master resume bullets or tags where a project supports a missing requirement — do not claim skills without repo or master resume evidence.
+5. **GitHub project scan** — for any skill gaps (❌ or ⚠️), fetch public repos from `master/profile.json` → `links.github` via the GitHub API. Review READMEs and repo structure for evidence of those skills. Document findings in the **GitHub project evidence** section of `analysis.md`. Suggest new master resume bullets or tags where a project supports a missing requirement — do not claim skills without repo or master resume evidence. Any **new or revised master bullets** must follow [`Resume Bullets.md`](Resume%20Bullets.md); show drafts for review before updating master JSON.
 6. Build `selection.json` — pick bullets by ID from `master/experience/` and `master/projects/`. Include project bullets surfaced by the GitHub scan when relevant.
 7. Generate `resume.md` using `templates/resume.md` with these section rules:
    - **Professional Experience** — items from `master/experience/` only
@@ -45,3 +45,8 @@ Follow the Resume Tracker workflow in this repo:
 - One thread per application — use this file to bootstrap each new one.
 - To revise a resume, stay in the **same thread** for that application.
 - After applying, check off the item in `TODO.md`.
+
+## Related files
+
+- [`Resume Bullets.md`](Resume%20Bullets.md) — X–Y–Z formula, length, and style when gap analysis adds master bullets
+- [`New Job Project.md`](New%20Job%20Project.md) — documenting employer initiatives and bullets

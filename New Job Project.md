@@ -16,7 +16,7 @@ Follow the Resume Tracker workflow:
 2. Review my notes below and identify **gaps** — anything vague, missing metrics, or unclear scope.
 3. **Ask clarifying questions** before finalizing bullets (see **Clarifying questions** at the end of this file). Skip only questions already answered in my notes.
 4. After I respond (or if my notes are already complete), add or update a project entry in that file's `projects[]` array (see structure below).
-5. Draft or refine **resume bullets** from my notes and answers — each bullet gets a stable `id` and `tags`.
+5. Draft or refine **resume bullets** from my notes and answers — each bullet gets a stable `id` and `tags`. Follow [`Resume Bullets.md`](Resume%20Bullets.md) (Google X–Y–Z, 20–40 words, one accomplishment per bullet).
 6. Put **cross-cutting work** (spans multiple initiatives) in the role-level `bullets[]` array instead of a project.
 7. **Do not** add internal project names to generated `resume.md` output — selected bullets still appear as a flat list under **Professional Experience**.
 8. Note any **pending follow-ups** (e.g. benchmark results not yet available) in the project `notes` field.
@@ -129,6 +129,7 @@ Internal project names are for **management and tailoring only**. Selection stil
 
 ## Related files
 
+- [`Resume Bullets.md`](Resume%20Bullets.md) — X–Y–Z formula, length, and style for all master bullets
 - [`New Job Listing.md`](New%20Job%20Listing.md) — tailoring a resume for a job application
 - `master/experience/_template.json` — schema for a new employer role
 - `master/projects/_template.json` — personal side projects (Technical Projects on resume)
@@ -173,6 +174,7 @@ Use this checklist. Omit questions that are clearly answered; combine related on
 
 - Anything missing from my notes that interviewers would expect for this kind of project?
 - Patents, publications, or presentations tied to this work?
+- **X, Y, Z** for each bullet: outcome (X), metric or scale (Y), how you did it (Z) — needed before drafting final `text`.
 
 ---
 
