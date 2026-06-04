@@ -9,37 +9,37 @@
   "bullets": [
     {
       "id": "bullet-engine-ai-cursor",
-      "text": "Used AI-assisted development tooling including Cursor to accelerate engine development through rapid iteration, targeted code generation, and continuous architectural refinement, while maintaining manual control over system design and correctness.",
+      "text": "Accelerated Vulkan game engine development with AI-assisted tooling including Cursor, by using targeted generation and review while retaining manual architectural control.",
       "tags": ["ai", "cursor", "vulkan", "architecture"]
     },
     {
       "id": "bullet-engine-vulkan-architecture",
-      "text": "Evolved a custom Vulkan renderer into a full game engine with a strong emphasis on layered architecture, abstracting low-level graphics and platform concerns away from high-level game code.",
+      "text": "Evolved a custom Vulkan renderer into a layered game engine, by abstracting graphics and platform concerns away from high-level game code.",
       "tags": ["vulkan", "game-engine", "architecture", "layered-design"]
     },
     {
       "id": "bullet-engine-pbr-pipeline",
-      "text": "Designed and implemented a complete PBR pipeline supporting modern lighting models and scalable material systems.",
+      "text": "Built a complete PBR pipeline with modern lighting and scalable materials, by integrating material systems into the Vulkan render architecture.",
       "tags": ["pbr", "rendering", "materials", "lighting"]
     },
     {
       "id": "bullet-engine-resource-manager",
-      "text": "Implemented a centralized resource manager to encapsulate asset lifetimes and raw data handles, improving ownership clarity and reducing coupling between engine systems.",
+      "text": "Reduced coupling between engine subsystems and clarified ownership, by implementing a centralized resource manager encapsulating asset lifetimes and raw data handles.",
       "tags": ["resource-management", "architecture", "c++"]
     },
     {
       "id": "bullet-engine-input-system",
-      "text": "Implemented an input system supporting gamepads and keyboards using a listener pattern to decouple hardware polling from game logic.",
+      "text": "Implemented gamepad and keyboard input supporting fully decoupled game logic, by a listener pattern separating hardware polling from gameplay systems.",
       "tags": ["input", "game-engine", "design-patterns"]
     },
     {
       "id": "bullet-engine-lighting-system",
-      "text": "Implemented depth buffer resources, camera and light uniform buffers, and a light entity system supporting point, directional, and spot lights integrated into the Vulkan render pipeline.",
+      "text": "Implemented point, directional, and spot lights in the Vulkan pipeline, by depth buffers, camera and light uniform buffers, and a light entity system.",
       "tags": ["vulkan", "lighting", "rendering", "shadows", "depth"]
     },
     {
       "id": "bullet-engine-pbr-shaders",
-      "text": "Authored GLSL PBR fragment shaders with TBN normal mapping, metallic/roughness/AO texture sampling, and gamma-correct albedo handling, wired through Vulkan descriptor sets and material uniform buffers.",
+      "text": "Authored GLSL PBR shaders with TBN normal mapping and metallic-roughness-AO sampling, by Vulkan descriptor sets and material uniform buffers with gamma-correct albedo.",
       "tags": ["pbr", "glsl", "shaders", "materials", "normal-mapping", "vulkan"]
     }
   ]
