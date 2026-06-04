@@ -1,0 +1,11 @@
+{
+  "name": "resume-tracker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build-resume-pdf": "node scripts/build-resume-pdf.mjs"
+  },
+  "devDependencies": {
+    "md-to-pdf": "^5.2.4"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "applicationId": "2026-06-visual-concepts-graphics-engineer",
+  "jobTitle": "Graphics Engineer",
+  "company": "Visual Concepts (NBA 2K)",
+  "experienceOrder": [
+    "exp-innopeak-software-engineer"
+  ],
+  "projectOrder": [
+    "proj-vulkan-game-engine",
+    "proj-tile-game-godot-jam"
+  ],
+  "selectedBullets": [
+    "bullet-innopeak-vrs-patents",
+    "bullet-innopeak-vrs-interception",
+    "bullet-innopeak-interception-games",
+    "bullet-innopeak-layer-caching-composition",
+    "bullet-innopeak-unified-rendering-architecture",
+    "bullet-innopeak-vrs-qualcomm",
+    "bullet-engine-vulkan-architecture",
+    "bullet-engine-pbr-shaders",
+    "bullet-engine-lighting-system",
+    "bullet-tilegame-fog-of-war",
+    "bullet-tilegame-editor-tooling",
+    "bullet-tilegame-pc-ship"
+  ],
+  "customSummary": "Graphics engineer with 6+ years in game and mobile graphics, writing high-performance C++ and shader code for production rendering systems. Inventor on patented Variable Rate Shading shipped across millions of devices, with approximately 10% GPU gains while preserving visual fidelity, plus per-title optimization for flagship games including PUBG and Honor of Kings. Building a Vulkan game engine with PBR GLSL shaders, multi-light pipelines, and layered C++ architecture; shipped a 3D Godot game jam title with VFX and designer-facing editor tooling. Experienced balancing cutting-edge rendering techniques against strict GPU budgets and partnering with cross-functional teams from GPU vendors to creative workflows.",
+  "selectedSkills": [
+    "C++",
+    "Vulkan",
+    "OpenGL",
+    "Unity",
+    "Godot",
+    "GLSL",
+    "HLSL",
+    "PBR",
+    "Variable Rate Shading",
+    "Ray Tracing",
+    "GPU Driven Rendering",
+    "RenderDoc",
+    "Nsight"
+  ]
+}
