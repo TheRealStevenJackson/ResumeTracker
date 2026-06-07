@@ -9,7 +9,7 @@ Graphics engineer on the NBA 2K team at Visual Concepts, focused on C/C++ render
 | Requirement | Master resume match | Notes |
 |-------------|---------------------|-------|
 | C/C++ high-performance rendering code | ✅ | Vulkan engine (C++), AOSP/RenderEngine C++ systems |
-| HLSL shaders | ⚠️→✅ | GLSL PBR shaders in engine (job allows comparable); HLSL listed in `skills.json` — no HLSL files in public GitHub |
+| HLSL shaders | ✅ | Unity VRS plugin (`bullet-innopeak-vrs-unity`); GLSL PBR in Vulkan engine |
 | 3+ years game or graphics development | ✅ | `experienceStart` 2020-01 → 6+ years; flagship game optimization (PUBG, LoL, HoK) |
 | Bachelor's CS or equivalent | ✅ | WSU Vancouver B.S. CS, 2019 |
 | 3D math | ✅ | Engine cameras/lights, PBR TBN, glm stack (GitHub) |
@@ -60,7 +60,7 @@ Scanned public repos at [TheRealStevenJackson](https://github.com/TheRealStevenJ
 
 ## Gaps — items to add to master resume
 
-- [ ] HLSL-specific work samples — if you have Unity/Unreal HLSL snippets, add a bullet or project note; until then lean on GLSL + "comparable" wording in summary/skills only
+- [x] HLSL — Unity VRS plugin bullet documents production HLSL (not in public GitHub)
 - [ ] Dedicated post-processing stack (bloom, color grading, motion blur) — not documented
 - [ ] Real-time global illumination — not in portfolio
 - [ ] AAA console/PC ship credit — mobile fleet-scale shipping is the closest evidence
@@ -70,6 +70,7 @@ Scanned public repos at [TheRealStevenJackson](https://github.com/TheRealStevenJ
 
 **Professional Experience**
 - `bullet-innopeak-vrs-patents` — new rendering tech, GPU performance, visual fidelity preserved
+- `bullet-innopeak-vrs-unity` — HLSL + Unity game engine integration, ~7% gains
 - `bullet-innopeak-vrs-interception` — third-party game rendering optimization (7–10% gains)
 - `bullet-innopeak-interception-games` — PUBG, Honor of Kings, LoL — game studio credibility
 - `bullet-innopeak-layer-caching-composition` — blur, shadows, rounded corners (VFX/UI polish)

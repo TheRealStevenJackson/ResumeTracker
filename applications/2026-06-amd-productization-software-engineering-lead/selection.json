@@ -1,0 +1,39 @@
+{
+  "applicationId": "2026-06-amd-productization-software-engineering-lead",
+  "jobTitle": "Productization Software Engineering Lead",
+  "company": "AMD (Advanced Rendering and Engineering)",
+  "experienceOrder": [
+    "exp-innopeak-software-engineer"
+  ],
+  "projectOrder": [
+    "proj-vulkan-game-engine"
+  ],
+  "selectedBullets": [
+    "bullet-innopeak-vrs-patents",
+    "bullet-innopeak-layer-caching",
+    "bullet-innopeak-vrs-unity",
+    "bullet-innopeak-vrs-interception",
+    "bullet-innopeak-interception-platform",
+    "bullet-innopeak-interception-games",
+    "bullet-innopeak-vrs-qualcomm",
+    "bullet-innopeak-unified-rendering-architecture",
+    "bullet-engine-vulkan-architecture",
+    "bullet-engine-pbr-shaders",
+    "bullet-engine-lighting-system"
+  ],
+  "customSummary": "Graphics and rendering engineer with 6+ years productizing GPU-focused rendering technology from research prototypes to fleet-wide deployment on millions of devices. Inventor on patented Variable Rate Shading, led layer-caching delivery while onboarding engineers via a reusable architecture template, and built durable game-graphics middleware integrating optimizations into flagship titles including PUBG and Honor of Kings. Hands-on in modern C++, HLSL, and GLSL across Vulkan, OpenGL ES, Unity, and AOSP — with partner-facing technical leadership at Qualcomm and across GPU vendors. Building a C++ Vulkan game engine with PBR pipelines and layered architecture; experienced transforming breakthrough rendering ideas into documented, shippable systems under strict quality and performance bars.",
+  "selectedSkills": [
+    "C++",
+    "Vulkan",
+    "OpenGL",
+    "Unity",
+    "GLSL",
+    "HLSL",
+    "PBR",
+    "Variable Rate Shading",
+    "Ray Tracing",
+    "GPU Driven Rendering",
+    "RenderDoc",
+    "Nsight"
+  ]
+}

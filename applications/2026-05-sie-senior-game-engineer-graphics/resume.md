@@ -3,7 +3,7 @@
 Senior Software Engineer — Graphics and Rendering Systems
 
 steven.jackson.gfx@gmail.com · 360-600-0283 · Issaquah, WA 98027
-https://linkedin.com/in/steven-jackson-rendering · https://github.com/TheRealStevenJackson
+[LinkedIn](https://linkedin.com/in/steven-jackson-rendering) · [GitHub](https://github.com/TheRealStevenJackson)
 
 ---
 

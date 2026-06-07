@@ -3,7 +3,7 @@
 {{headline}}
 
 {{email}} · {{phone}} · {{location}}
-{{linkedin}} · {{github}} · {{portfolio}}
+[LinkedIn]({{linkedin}}) · [GitHub]({{github}}){{#if portfolio}} · [Portfolio]({{portfolio}}){{/if}}
 
 ---
 

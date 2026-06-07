@@ -107,8 +107,8 @@
         },
         {
           "id": "bullet-innopeak-vrs-unity",
-          "text": "Improved Unity rendering performance ~7% with a Vulkan-intercepted VRS plugin, by pre-generating shading-rate attachments at instance and device creation before context init.",
-          "tags": ["unity", "vulkan", "vrs", "variable-rate-shading", "interception", "performance", "rendering"]
+          "text": "Improved Unity rendering performance ~7% with a Vulkan-intercepted VRS plugin, by writing HLSL shaders and pre-generating shading-rate attachments at instance and device creation before context init.",
+          "tags": ["unity", "vulkan", "vrs", "variable-rate-shading", "interception", "performance", "rendering", "hlsl", "shaders"]
         },
         {
           "id": "bullet-innopeak-vrs-interception",

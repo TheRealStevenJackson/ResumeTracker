@@ -56,6 +56,16 @@ a {
   text-decoration: none;
 }
 
+/* Contact links row (third paragraph after name): avoid URL line breaks */
+h1 + p + p + p {
+  white-space: nowrap;
+  font-size: 10pt;
+}
+
+h1 + p + p + p a {
+  white-space: nowrap;
+}
+
 @media print {
   body {
     padding: 0;

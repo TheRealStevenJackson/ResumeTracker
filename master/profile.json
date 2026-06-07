@@ -7,7 +7,8 @@
   "links": {
     "linkedin": "https://linkedin.com/in/steven-jackson-rendering",
     "github": "https://github.com/TheRealStevenJackson",
-    "portfolio": ""
+    "portfolio": "",
+    "resumeHeader": "[LinkedIn](https://linkedin.com/in/steven-jackson-rendering) · [GitHub](https://github.com/TheRealStevenJackson)"
   },
   "summary": "Graphics and rendering engineer with 6+ years of experience designing and shipping GPU-focused performance optimizations and system-level rendering solutions for Android and real-time graphics platforms. Motivated by building efficient and scalable rendering systems that enable richer visuals under strict power and performance constraints. Strong portfolio of patented innovations in Variable Rate Shading, GPU workload optimization, and composition layer caching adopted across millions of devices. Experienced working closely with GPU architecture and operating system graphics pipelines, with work spanning Vulkan, OpenGL, Unity, and ray tracing pipelines.",
   "experienceStart": "2020-01"

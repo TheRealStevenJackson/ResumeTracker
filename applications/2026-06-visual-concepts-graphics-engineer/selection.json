@@ -11,6 +11,7 @@
   ],
   "selectedBullets": [
     "bullet-innopeak-vrs-patents",
+    "bullet-innopeak-vrs-unity",
     "bullet-innopeak-vrs-interception",
     "bullet-innopeak-interception-games",
     "bullet-innopeak-layer-caching-composition",
@@ -23,7 +24,7 @@
     "bullet-tilegame-editor-tooling",
     "bullet-tilegame-pc-ship"
   ],
-  "customSummary": "Graphics engineer with 6+ years in game and mobile graphics, writing high-performance C++ and shader code for production rendering systems. Inventor on patented Variable Rate Shading shipped across millions of devices, with approximately 10% GPU gains while preserving visual fidelity, plus per-title optimization for flagship games including PUBG and Honor of Kings. Building a Vulkan game engine with PBR GLSL shaders, multi-light pipelines, and layered C++ architecture; shipped a 3D Godot game jam title with VFX and designer-facing editor tooling. Experienced balancing cutting-edge rendering techniques against strict GPU budgets and partnering with cross-functional teams from GPU vendors to creative workflows.",
+  "customSummary": "Graphics engineer with 6+ years in game and mobile graphics, writing high-performance C++ and production shader code in HLSL and GLSL. Inventor on patented Variable Rate Shading shipped across millions of devices, with approximately 10% GPU gains while preserving visual fidelity, plus a Unity VRS plugin with HLSL shaders and per-title optimization for flagship games including PUBG and Honor of Kings. Building a Vulkan game engine with PBR pipelines, multi-light rendering, and layered C++ architecture; shipped a 3D Godot game jam title with VFX and designer-facing editor tooling. Experienced balancing cutting-edge rendering techniques against strict GPU budgets and partnering with cross-functional teams from GPU vendors to creative workflows.",
   "selectedSkills": [
     "C++",
     "Vulkan",
